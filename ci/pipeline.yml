@@ -136,7 +136,7 @@ jobs:
   plan:
   - get: pal-tracker
     passed: [build]
-    trigger: true
+    trigger: false
   - task: migrate databases
     file: pal-tracker/ci/migrate.yml
     params:
