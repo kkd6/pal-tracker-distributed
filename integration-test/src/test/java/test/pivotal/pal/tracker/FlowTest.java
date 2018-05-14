@@ -64,6 +64,9 @@ public class FlowTest {
         TestScenarioSupport.clearAllDatabases();
     }
 
+
+
+
     @After
     public void tearDown() {
         registrationServer.stop();
@@ -156,3 +159,4 @@ public class FlowTest {
         assertThat(response.body).isNotNull().isNotEmpty();
     }
 }
+
